@@ -103,7 +103,7 @@ class ApiClient {
       console.error('Error details:', error.response?.data || error.message);
       
       // Check if Gemini API key is available as fallback
-      const geminiApiKey = getEnv('REACT_APP_GEMINI_API_KEY', '');
+      const geminiApiKey = getEnv('VITE_GEMINI_API_KEY', '');
       console.log('🔄 Checking Gemini fallback. API key configured:', !!geminiApiKey && geminiApiKey !== 'your_gemini_api_key_here');
       
       if (geminiApiKey && geminiApiKey !== 'your_gemini_api_key_here') {

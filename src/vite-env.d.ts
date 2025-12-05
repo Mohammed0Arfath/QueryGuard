@@ -1,8 +1,8 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly REACT_APP_API_BASE: string
-  readonly REACT_APP_DEBUG?: string
+  readonly VITE_API_BASE: string
+  readonly VITE_GEMINI_API_KEY?: string
   readonly MODE: string
   readonly DEV: boolean
   readonly PROD: boolean
