@@ -617,11 +617,11 @@ private getMockLogs(): LogEntry[] {
 
 | Name | Role | GitHub |
 |------|------|--------|
-| **Mohammed Arfath R** | Lead Developer & Project Lead | [@Mohammed0Arfath](https://github.com/Mohammed0Arfath) |
-| **Naresh R** | Developer | - |
-| **Hariharan S** | Developer | - |
-| **Sanjay Kanna V** | Developer | - |
-| **Mohammad Yousuf K A** | Developer | - |
+| **Mohammed Arfath R** | UI & UX Designer & Project Lead | [@Mohammed0Arfath](https://github.com/Mohammed0Arfath) |
+| **Naresh R** | Frontend Developer | [@naresh-github-2005](https://github.com/naresh-github-2005) |
+| **Hariharan S** | Backend Developer | [@Hari20032005](https://github.com/Hari20032005) |
+| **Sanjay Kanna V** | AI & ML Engineer | [@Sanjaykannavedhachalam](https://github.com/Sanjaykannavedhachalam) |
+| **Mohammad Yousuf K A** | Testing and QA | - |
 
 **Contact**: mohammedarfath02003@gmail.com
 
