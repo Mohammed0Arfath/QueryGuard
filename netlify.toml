@@ -1,0 +1,48 @@
+# Netlify Configuration File
+[build]
+  # Build command
+  command = "npm run build"
+  
+  # Directory to publish (Vite outputs to 'dist' by default)
+  publish = "dist"
+
+# Environment variables (set these in Netlify dashboard)
+# REACT_APP_API_BASE - Your backend API URL
+# REACT_APP_GEMINI_API_KEY - Your Gemini API key (optional)
+
+# Redirect rules for SPA (Single Page Application)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    # Content-Security-Policy will be set in index.html
+
+# Cache static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache fonts
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Node version (optional, Netlify will use latest LTS by default)
+[build.environment]
+  NODE_VERSION = "18"
+
+# Functions configuration (if you add Netlify Functions later)
+[functions]
+  directory = "netlify/functions"

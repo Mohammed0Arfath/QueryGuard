@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base font size increase for better readability */
+html {
+  font-size: 18px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Custom scrollbar styling - Enhanced */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1020;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00e5c4, #00b3a0);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 229, 196, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #ff2d95, #cc0077);
+  box-shadow: 0 0 15px rgba(255, 45, 149, 0.7);
+}
+
+/* Custom focus styles for accessibility */
+.focus-outline:focus {
+  outline: 2px solid #00e5c4;
+  outline-offset: 2px;
+  box-shadow: 0 0 15px rgba(0, 229, 196, 0.4);
+}
+
+/* Enhanced Cyberpunk glow effects */
+.cyber-glow {
+  box-shadow: 0 0 15px rgba(0, 229, 196, 0.4), 0 0 25px rgba(0, 229, 196, 0.2);
+}
+
+.cyber-glow:hover {
+  box-shadow: 0 0 25px rgba(0, 229, 196, 0.6), 0 0 40px rgba(0, 229, 196, 0.4), 0 0 60px rgba(0, 229, 196, 0.2);
+}
+
+/* Three.js canvas styling */
+.three-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Enhanced Animation utilities */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 229, 196, 0.5), 0 0 20px rgba(0, 229, 196, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0, 229, 196, 0.8), 0 0 40px rgba(0, 229, 196, 0.6), 0 0 60px rgba(0, 229, 196, 0.4);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Holographic border effect */
+@keyframes holographic-border {
+  0%, 100% {
+    border-color: rgba(0, 229, 196, 0.6);
+    box-shadow: 0 0 15px rgba(0, 229, 196, 0.4);
+  }
+  33% {
+    border-color: rgba(168, 85, 247, 0.6);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+  }
+  66% {
+    border-color: rgba(255, 45, 149, 0.6);
+    box-shadow: 0 0 15px rgba(255, 45, 149, 0.4);
+  }
+}
+
+.holographic-border {
+  animation: holographic-border 5s ease-in-out infinite;
+}
+
+/* Scanline overlay effect */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.scanline-overlay::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, 
+    transparent 0%,
+    rgba(0, 229, 196, 0.05) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 9999;
+  animation: scanline 8s linear infinite;
+}
+
+/* Neon text glow */
+.neon-text {
+  text-shadow: 
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    0 0 30px currentColor;
+}
+
+/* Grid overlay pattern */
+.grid-overlay {
+  background-image: 
+    linear-gradient(rgba(0, 229, 196, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 196, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Futuristic card hover effect */
+.futuristic-card {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.futuristic-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, #00e5c4, #a855f7, #ff2d95, #00e5c4);
+  background-size: 300% 300%;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  animation: gradient-shift 4s ease infinite;
+}
+
+.futuristic-card:hover::before {
+  opacity: 0.3;
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
