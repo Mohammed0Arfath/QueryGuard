@@ -613,9 +613,17 @@ private getMockLogs(): LogEntry[] {
 
 ## 👥 Team & Contributors
 
-**Lead Developer**: Mohammed Arfath R  
-**Email**: mohammedarfath02003@gmail.com  
-**GitHub**: [@Mohammed0Arfath](https://github.com/Mohammed0Arfath)
+### Development Team
+
+| Name | Role | GitHub |
+|------|------|--------|
+| **Mohammed Arfath R** | Lead Developer & Project Lead | [@Mohammed0Arfath](https://github.com/Mohammed0Arfath) |
+| **Naresh R** | Developer | - |
+| **Hariharan S** | Developer | - |
+| **Sanjay Kanna V** | Developer | - |
+| **Mohammad Yousuf K A** | Developer | - |
+
+**Contact**: mohammedarfath02003@gmail.com
 
 ### Acknowledgments
 - Google Gemini AI for LLM backend
