@@ -186,6 +186,7 @@ User Query → Sanitization → Rate Limit Check → Multi-Layer Analysis
                                 ↓
             Database Logging + User Response + Explainability
 ```
+<img width="741" height="1014" alt="image" src="https://github.com/user-attachments/assets/f07ddf09-7f95-43ae-89a0-e72c965d6712" />
 
 ### 🎯 Core Features
 
