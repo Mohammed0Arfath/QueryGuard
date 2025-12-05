@@ -1,4 +1,6 @@
 # 🛡️ QueryGuard: Medical AI Query Firewall
+<img width="1024" height="541" alt="image" src="https://github.com/user-attachments/assets/28df81a1-ffe3-4f5d-9e61-4639ec7e5726" />
+
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-brightgreen)](https://queryguard.netlify.app) [![Backend](https://img.shields.io/badge/API-Render-blue)](https://queryguard-backend-2kxv.onrender.com) ![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue) ![React](https://img.shields.io/badge/React-18.2-blue) ![NLP](https://img.shields.io/badge/NLP-BERT-orange) ![AI Security](https://img.shields.io/badge/Security-Multi--Layer-red)
 
